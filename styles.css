@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+span{
+    font-weight: bold;
+}
+
+span, .active{
+    color: crimson;
+}
+.active{
+    font-weight: bold;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color:#172647;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:10px;
+    padding-left: 50px;
+    background: #fff;
+    box-shadow: 1px 1px 10px rgba(92, 92, 92, 0.5);
+    z-index: 100;
+}
+
+#index_landing header{
+    position: sticky;
+}
+
+.logo a{
+    color:#172647;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li{
+    padding: 15px;
+    position: relative;
+}
+
+nav ul li .active::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: crimson;
+    position: absolute;
+    bottom: -31px;
+}
+
+nav ul li a:hover{
+    color: crimson;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color:#172647;
+    transition: color .5s, font-weight .5s;
+    font-weight: 500;
+}
+
+main{
+    margin-top: 81.66px;
+}
+
+#indexmain{
+    margin-top: 30px;
+}
+
+
+.landing{
+    background-image: url(img/slider-7.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 65px;
+    padding-left: 50px;
+    padding-bottom: 70px;
+}
+
+.landing div{
+    padding-right: 500px;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 40px;
+}
+
+.landing div h1{
+    font-size: 35px;
+    color: #fff;
+}
+
+.landing div p{
+    line-height: 2;
+}
+
+
+.landing .bouton a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: crimson;
+    width: 150px;
+    height: 40px;
+    transition: background .5s ease-in;
+}
+
+.landing .bouton a:hover{
+    background: #1a0267;
+}
+
+#environnement{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    position: relative;
+    background: #fff;
+}
+
+#environnement .circle{
+    background: #172647;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 3;
+}
+
+#environnement .circle-1{
+    height: 200px;
+    width: 200px;
+    right: 40px;
+    top: 20px;
+}
+
+#environnement .circle-2{
+    left: -200px;
+    bottom: -250px;
+    width: 500px;
+    height: 500px;
+}
+
+#environnement .circle-3{
+    height: 100px;
+    width: 100px;
+    right: 190px;
+    top: 15px;
+}
+  
+#environnement .grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 250px) ;
+    grid-template-rows: repeat(2, 250px) ;
+    gap: 15px;
+    position: relative;
+    z-index: 4;
+}
+
+#environnement .grid-container .img{
+    box-shadow: 1px 1px 5px rgba(92, 92, 92, 0.5);
+}
+
+#environnement .grid-container .img-1{
+    grid-row: 1 / 3;
+    background: url(img/steven-abraham-RmzmXWuB5EQ-unsplash-compressed\(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#environnement .grid-container .img-2{
+    grid-column: 2 / 5 ;
+    background: url(img/gautam-krishnan-47gcGwUUHb0-unsplash-compressed\(1\).jpg);
+    background-position: top -95px right 20px;
+    background-size: cover;
+}
+
+#environnement .grid-container .img-3{
+    background: url(img/azzedine-rouichi-KDM09YR4_bY-unsplash-compressed\(1\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#environnement .grid-container .img-4{
+   background: url(img/feliphe-schiarolli-hes6nUC1MVc-unsplash-compressed\(1\).jpg); 
+   background-size: cover;
+}
+
+#environnement .grid-container .img-5{
+    background: url(img/kazuend-DHk_mju83z0-unsplash-compressed\(1\).jpg); 
+    background-size: cover;
+ }
+
+#chiffres_resultats{
+    background: #f4f4f4;
+    padding:30px 0;
+    padding-left: 110px;
+    position: relative;
+    z-index: 5;
+}
+
+#chiffres_resultats p{
+    text-align: center;
+}
+
+#chiffres_resultats .stats-container{
+    display: flex;
+}
+
+#chiffres_resultats .stats-container .pourcentage{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+#chiffres_resultats .stats-container .pourcentage .pourcentage-content{
+    height: 20px;
+    width: 600px;
+    background: #c7c7c7;
+    position: relative;
+}
+
+#chiffres_resultats .stats-container .pourcentage .pourcentage-content:first-child{
+    margin-bottom: 20px;
+}
+
+#chiffres_resultats .stats-container .pourcentage .pourcentage-content:nth-child(2){
+    margin-bottom: 20px;
+}
+
+#chiffres_resultats .stats-container .pourcentage .pourcentage-content:first-child .pourcentage-bar{
+    width: 97%;
+}
+
+#chiffres_resultats .stats-container .pourcentage .pourcentage-content:nth-child(2) .pourcentage-bar{
+    width: 83%;
+}
+
+#chiffres_resultats .stats-container .pourcentage .pourcentage-content .pourcentage-bar{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: crimson;
+    color: #fff;
+    text-align: center;
+}
+
+
+#classe_prestigieuse{
+    padding:30px 0 30px 110px;
+}
+
+#classe_prestigieuse .content-classe{
+    display: flex;
+    justify-content: space-between;
+}
+
+#classe_prestigieuse .content-classe .img-classe{
+    width: 40%;
+    background: url(img/pexels-rethaferguson-3825456.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 7px rgba(92, 92, 92, 0.5);
+}
+
+#classe_prestigieuse .content-classe .desc-classe{
+    width: 60%;
+    background-color: #fff;
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+#classe_prestigieuse .content-classe .desc-classe p{
+    line-height: 1.5;
+}
+
+
+.enseignement_qualite{
+    background: #f4f4f4;
+    padding-top: 30px;
+    padding-left: 110px;
+    padding-bottom: 60px;
+    display: flex;
+}
+
+.gauche{
+    width: 50%;
+    position: relative;
+}
+
+.gauche .circle{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: #172647;
+} 
+
+.gauche .circle-1{
+    bottom: -45px;
+    left: -45px;
+}
+.gauche .circle-2{
+   top: 120px;
+   right: -90px;
+}
+
+
+.gauche .pilier-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(3);
+    gap: 20px;
+    z-index: 10;
+}
+
+.gauche .pilier-container .pilier-item{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 1px 1px 5px rgba(92, 92, 92, 0.5);
+}
+.gauche .pilier-container .pilier-item h2 {
+    margin: 0;
+}
+.droite{
+    width: 50%;
+    position: relative;
+}
+.droite #image{
+    position: absolute;
+    left: 160px;
+    top: 50px;
+    height: 850px;
+    width: 300px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    background: url(img/pexels-katerina-holmes-5905557.jpg);
+    background-position: top 0px left -300px;
+    background-size: cover;
+    z-index: 6;
+}
+.droite #ombre{
+    position: absolute;
+    left: 180px;
+    top: 20px;
+    height: 850px;
+    width: 300px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    background-color: #172647;
+    z-index: 5;
+}
+
+.profs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.profs .prof-item{
+    width: 300px;
+    margin-bottom: 15px;
+    background: #fff;
+    box-shadow: 1px 1px 5px rgba(92, 92, 92, 0.5);
+}
+
+.profs .prof-item .item-body{
+    text-align: center;
+    padding: 10px;
+}
+
+.profs .prof-item .item-head{
+    height: 150px;
+    background: url(img/pexels-katerina-holmes-5905485.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.profs .prof-item:nth-child(2) .item-head{
+    background: url(img/pexels-max-fischer-5212320.jpg);
+    background-size: cover;
+}
+
+.profs .prof-item:last-child .item-head{
+    background: url(img/pexels-nappy-935943.jpg);
+    background-size: cover;
+}
+
+.profs .prof-item .item-footer{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.profs .prof-item .item-footer h3{
+    margin: 0;
+}
+
+#administration {
+    padding: 20px 40px;
+}
+
+#mot_directeur{
+    background: #f4f4f4;
+    padding: 40px 40px;
+    overflow: hidden;
+}
+  
+.image {
+    float: left;
+    margin-right: 20px;
+}
+  
+#personnel-hautement-qualifié{
+    padding: 40px 40px;
+}
+  
+.image img {
+max-width: 100%;
+height: auto;
+}
+
+#parcours_scolaire{
+    background: #f4f4f4;
+    padding: 40px 40px;
+}  
+
+.parcours-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(4);
+    column-gap: 10px;
+    justify-content: center;
+    padding-top: 10px;
+}
+.parcours-item {
+    width: 250px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    transition: transform .5s ease-out;
+}
+
+.parcours-item:hover{
+    transform: scale(1.1);
+}
+  
+.parcours-item h3 {
+    margin-top: 0;
+}
+
+#evenements {
+    padding: 30px 40px;
+}
+  
+.evenement {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    transition: transform .5s ease-in;
+}
+
+.evenement:hover{
+    transform: scale(1.05);
+}
+
+.evenement p{
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold;
+}
+  
+.background-image {
+    width: 200px; 
+    height: 150px; 
+    background-size: cover;
+    background-position: center;
+}
+  
+.legende {
+    font-style: italic;
+    text-align: center;
+    margin: 0 20px;
+}
+  
+.jpo {
+    background-image: url('img/sam-balye-w1FwDvIreZU-unsplash\ \(2\).jpg');
+    background-position: center;
+    background-size: cover;
+}
+  
+.competition {
+    background-image: url('img/nik-shuliahin-BWRyS1-KKrs-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+}
+  
+.spectacle {
+    background-image: url('img/adrian-dascal-Ar4uu5YKLK4-unsplash.jpg');
+    background-position: bottom -60px right 0px;
+    background-size: cover;
+}
+  
+.competition .background-image,
+  .spectacle .background-image {
+    order: 2;
+}
+  
+.competition .legende,
+  .spectacle .legende {
+    order: 1;
+}
+
+#concours_diplomes{
+    padding: 30px 40px;
+    background: #f4f4f4;
+}
+
+.c-d{
+    display: flex;
+}
+.image_c-d {
+    width: 50%;
+    height: 250px;
+    background: url(img/pexels-riccardo-vespa-594469796-19350051.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.desc_c-d {
+    width: 50%;
+    line-height: 2;
+}
+.desc_c-d div{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.diplomes .image_c-d{
+    background: url(img/pexels-george-pak-7972735.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#clubs_travail{
+    padding: 30px 40px;
+}
+
+.groupe-travail-images {
+    height: 250px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(1);
+    column-gap: 20px;
+}
+
+.groupe-travail-images .gtimage{
+    background: url(img/pexels-rethaferguson-3811082.jpg);
+    background-size: cover;
+    box-shadow: 1px 1px 5px rgba(92, 92, 92, 0.5);
+    transition: transform .5s ease-in;
+}
+
+.groupe-travail-images .gtimage:nth-child(2){
+    background: url(img/pexels-william-fortunato-6140676.jpg);
+    background-size: cover;
+}
+
+.groupe-travail-images .gtimage:last-child{
+    background: url(img/pexels-gabby-k-9431441.jpg);
+    background-size: cover;
+}
+
+.groupe-travail-images .gtimage:hover{
+    transform: scale(1.05);
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 40px 30px 40px;
+    background: #172647;
+}
+
+footer .logo-footer .logo a{
+    color: #fff;
+}
+
+footer .contact{
+    width: 33.33%;
+    color: #fff;
+}
+footer .contact h3{
+    color: #fff;
+}
+
+footer .newsletter{
+    width: 33.33%;
+    color: #fff;
+}
+footer .newsletter h3{
+    color: #fff;
+}
+
+footer .sendEmail{
+    display: flex;
+}
+
+footer .sendEmail input{
+    height: 38px;
+    width: 300px;
+    background: #fff;
+    border: 1px solid gray;
+    padding-left: 10px;
+}
+
+footer .sendEmail button{
+    height: 41.5px;
+    color: #fff;
+    background: crimson;
+    border: none;
+}
